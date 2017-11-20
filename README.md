@@ -357,7 +357,7 @@ improvement to the user's visual perception.
 --------------------
 
 [[Examples Location
-]](https://github.com/HaplyHaptics/Haply-hAPI/examples)
+]](https://github.com/crgallac/Haply-hAPI/tree/master/hAPI/examples)
 
 ### 2.4.1. Hello Wall
 
