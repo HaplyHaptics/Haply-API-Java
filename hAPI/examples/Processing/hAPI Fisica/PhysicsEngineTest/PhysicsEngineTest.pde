@@ -53,11 +53,10 @@ void setup() {
   size(640, 400); // (worldWidth*pixelsPerCentimeter, worldHeight*pixelsPerCentimeter) must input as number
 
   /* BOARD */
-  haply_board = new Board(this, "COM10", 0);
+  haply_board = new Board(this, "COM6", 0); //Put your COM# port here
 
   /* DEVICE */
   haply_2DoF = new Device(degreesOfFreedom.HaplyTwoDOF, deviceID, haply_board);
-  
 
   hAPI_Fisica.init(this); 
   hAPI_Fisica.setScale(pixelsPerCentimeter); 
@@ -135,7 +134,7 @@ void setup() {
   s.h_avatar.attachImage(haply_avatar); 
 
 
-  world.setGravity((0.0), (0.0)); //1000 cm/(s^2)
+  world.setGravity((0.0), (300.0)); //1000 cm/(s^2)
   world.setEdges((edgeTopLeftX), (edgeTopLeftY), (edgeBottomRightX), (edgeBottomRightY)); 
   world.setEdgesRestitution(.4);
   world.setEdgesFriction(0.5);
@@ -181,7 +180,7 @@ void onTickEvent(CountdownTimer t, long timeLeftUntilFinish){
  
   f_ee.set(-s.getVCforceX(), s.getVCforceY());
  
-  f_ee.div(10000); //
+  f_ee.div(1000); //
   haply_2DoF.set_device_torques(f_ee.array());
   torques.set(haply_2DoF.mechanisms.get_torque());
   haply_2DoF.device_write_torques();

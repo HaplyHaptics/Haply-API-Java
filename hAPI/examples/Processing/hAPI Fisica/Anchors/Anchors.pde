@@ -67,7 +67,7 @@ void setup() {
   size(400, 320);
   
   /* BOARD */
-  haply_board = new Board(this, Serial.list()[0], 0);
+  haply_board = new Board(this, "COM6", 0);
 
   /* DEVICE */
   haply_2DoF = new Device(degreesOfFreedom.HaplyTwoDOF, deviceID, haply_board);
@@ -229,7 +229,7 @@ void onTickEvent(CountdownTimer t, long timeLeftUntilFinish){
  
   f_ee.set(-s.getVCforceX(), s.getVCforceY());
  
-  f_ee.div(10000); //
+  f_ee.div(1000); //
   haply_2DoF.set_device_torques(f_ee.array());
   torques.set(haply_2DoF.mechanisms.get_torque());
   haply_2DoF.device_write_torques();
