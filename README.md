@@ -130,7 +130,7 @@ the device.
 <img src="media/image2.jpg" width="500"> 
  
 
-To develop with the Haply Dev Board, user\'s program all the details of
+To develop with the Haply Dev Board, users program all the details of
 the simulation on the computer. The physics simulation, graphics, audio,
 device kinematics, and force calculations are all performed on the
 powerful computer processors. We only use the hAPI to read the device
