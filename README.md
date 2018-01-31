@@ -316,7 +316,7 @@ the animation event, (2) the haptic simulation event. These events are
 analogous to threads but are much simpler in function within the
 confines of the Processing development environment.
 
-<img src="media/image7.jpg" width="500">   
+<img src="media/image7.gif" width="500">   
 
 The main timed event is the simulation event loop. The simulation event
 loop runs at a frequency of 1kHz, and waits for new angle data from the
