@@ -272,7 +272,7 @@ devices to the Haply Dev Board.
 ==================
 
 The guided examples in the following sections will demonstrate some
-basic examples of how to use the HDK to develop your own haptic
+basic examples of how to use the HDK (Haply Development Kit) to develop your own haptic
 simulations. These demonstrations are built using Processing which is an
 open source development environment initially developed at the MIT Media
 Lab. We chose Processing as an initial platform to develop one because
