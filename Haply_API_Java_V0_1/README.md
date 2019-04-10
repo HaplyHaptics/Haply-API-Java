@@ -1,14 +1,7 @@
-#hAPI: Haptics Application Programming Interface
+# Haply_API_Java_V0_1
 
-## Design Goals of the hAPI
+## Examples
 
-## Base hAPI 
+## lib
 
-### Examples
-
-## hAPI Fisica
-
-### Examples 
-
-## Troubleshooting
-
+## Src
