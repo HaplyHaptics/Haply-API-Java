@@ -1,5 +1,5 @@
 
-# Haply API Documentation
+# Haply API (Processing) Documentation
 Haply Software Documentation
 
 The Haply API: A DEVELOPER'S GUIDE
