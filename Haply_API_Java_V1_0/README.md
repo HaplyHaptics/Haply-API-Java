@@ -15,6 +15,10 @@
 - Maze
 - Shapes
 
+### Empty Project Templates
+- Haptic Template (without Physics)
+- Haptic Template (with Physics)
+
 ## lib
 - .jar file containing the Haply API
 
