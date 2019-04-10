@@ -44,7 +44,7 @@ Free Software Foundation; with no Invariant Sections, no Front-Cover
 Texts, and no Back-Cover Texts. A copy of the license is included in the
 section entitled \"GNU Free Documentation License\".*
 
-HAPI SYSTEM INTRODUCTION
+HAPLY API SYSTEM INTRODUCTION
 ------------------------
 
 With the proliferation of rapid-prototyping tools and open-source
