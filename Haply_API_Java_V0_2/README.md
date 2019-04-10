@@ -1,7 +1,7 @@
 # Haply_API_Java_V0_2
 
 ## Examples
-### Haptic Demos which use the Haply API Fisica Engine
+### Haptic Demos using the Haply API and Fisica Engine
 - Drag n Drop
 - Maze
 - Physics
