@@ -1,8 +1,8 @@
 
-# Haply hAPI Documentation
+# Haply API Documentation
 Haply Software Documentation
 
-The Haply hAPI: A DEVELOPER'S GUIDE
+The Haply API: A DEVELOPER'S GUIDE
 ===================================
 
 Documentation and Guided Examples 
@@ -49,15 +49,15 @@ HAPI SYSTEM INTRODUCTION
 
 With the proliferation of rapid-prototyping tools and open-source
 development platforms, it is now possible for makers, researchers, and
-hobbyists to develop their own haptic systems. With the Haptic API
-(hAPI), it is our attempt to unify prior work that has been done to
+hobbyists to develop their own haptic systems. With the Haply API, 
+it is our attempt to unify prior work that has been done to
 develop low-cost and accessible haptic systems aimed at lowering the
 barrier of entry into the field.
 
-The hAPI is an open-sourced haptics application programing interface
+The Haply API is an open-sourced haptics application programing interface
 (API) that is intended to make prototyping and developing haptic
 simulations more accessible than it has been before. A major objective
-for the hAPI is that it allow users to develop and prototype across a
+for the Haply API is that it allow users to develop and prototype across a
 number of devices and easily add their own designs to get their
 simulations up and running quickly. Specifically, its purpose is to
 provide a platform with which users can become exposed to the basic
@@ -65,11 +65,11 @@ concepts of a kinesthetic (force-feedback) haptic system. With this
 platform, we hope you can quickly develop haptic applications using
 open-source haptic devices.
 
-In this document, we have documented the hAPI in the context of two
+In this document, we have documented the Haply API in the context of two
 open-sourced hardware systems that it has been designed to work with -
 specifically, the "getting started" stage.
 
-See also hAPI Documentation and Examples for instructions on how to use
+See also Haply API Documentation and Examples for instructions on how to use
 the hAPI in your haptic simulation development.
 
 
@@ -82,7 +82,7 @@ mistake! Thanks!
 
 TABLE OF CONTENTS
 
-1 Haptic Systems and the hAPI
+1 Haptic Systems and the Haply API
 ==============================
 
 1.1. HAPTIC SYSTEMS 
@@ -115,11 +115,11 @@ Depending on the microcontroller's capabilities, we are able to divvy up
 the vital aspects of the haptic simulation across the computer and the
 control board.
 
-This is where the hAPI comes in; it allows us to use the familiar
+This is where the Haply API comes in; it allows us to use the familiar
 computer interface to simplify handling many of the more annoying
 details of a haptic simulation (i.e. the bits and bytes of communication
 protocols, specifics about what sensors/actuators are being used, etc.).
-The hAPI functions as an intermediary link between the controller and
+The Haply API functions as an intermediary link between the controller and
 the device.
 
 1.2. SOFTWARE ARCHITECTURE FOR THE HAPLY DEVELOPMENT KIT (HDK)
@@ -174,7 +174,7 @@ and complex graphic rendering can lead to the simulation slowing down to
 several milliseconds which can lead to unwanted effects like feeling
 'choppy'.
 
-1.3. HAPI ARCHITECTURE
+1.3. Haply API ARCHITECTURE
 ----------------------
 
 The previous section dealt with some of the intricacies of two
@@ -187,7 +187,7 @@ a modular haptics API, allowing users to mix and match various types of
 robotic mechanisms, sensors, and actuators to prototype different types
 of haptic devices.
 
-The hAPI design can be interpreted as a branching tree. At the
+The Haply API design can be interpreted as a branching tree. At the
 foundation of the tree is the ***Board*.** A **Board** functions as the
 connection between the computer and the **Device.** The **Device** is
 the physical interface that the user manipulates when interacting with a
@@ -209,7 +209,7 @@ make many versatile devices.
 
 The physical understanding of how we can compose **Devices** from
 different **Mechanisms, Sensors,** and **Actuators** leads, naturally
-,to the way the hAPI is partitioned using classes of the same name. In
+,to the way the Haply API is partitioned using classes of the same name. In
 the same way we have a physical **Board**, we have a class
 representation of the **Board**. It can be populated by a number of
 **Device** objects which are, themselves, comprised of a number of
@@ -236,7 +236,7 @@ Structure
 <img src="media/image5.gif" width="500"> 
  
 
-The hAPI can be coupled to compatible devices and be used to set up
+The Haply API can be coupled to compatible devices and be used to set up
 devices for a haptic simulation. The Haply 2DoF is, as the name implies,
 a two degree-of-freedom device. It allows for users to achieve motion in
 a plane as well as controlling the device in the plane. We use two
@@ -1085,10 +1085,10 @@ experience contact force with the ball (asteroid). Once all the forces
 have been summed, the calculated torque renderings are sent to the Haply
 pantograph device.
 
-3 HAPI DOCUMENTATION
+3 Haply API DOCUMENTATION
 =====================
 
-### 3.0.1. HAPI UML 
+### 3.0.1. Haply API UML 
 
 <img src="media/image32.gif" width="500"> 
  
