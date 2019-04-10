@@ -70,7 +70,7 @@ open-sourced hardware systems that it has been designed to work with -
 specifically, the "getting started" stage.
 
 See also Haply API Documentation and Examples for instructions on how to use
-the hAPI in your haptic simulation development.
+the Haply API in your haptic simulation development.
 
 
 \*\*DISCLAIMER\*\*
@@ -133,7 +133,7 @@ the device.
 To develop with the Haply Dev Board, users program all the details of
 the simulation on the computer. The physics simulation, graphics, audio,
 device kinematics, and force calculations are all performed on the
-powerful computer processors. We only use the hAPI to read the device
+powerful computer processors. We only use the Haply API to read the device
 states and send the values of the desired forces to the device to
 command the actuators.
 
@@ -181,8 +181,8 @@ The previous section dealt with some of the intricacies of two
 open-source haptic systems and the way in which the simulation
 modalities are divided between the computer and the control board.
 However, you may have noticed that what is common between the two haptic
-systems was the use of the hAPI to handle the communication between our
-computers and control boards. The hAPI has been developed to function as
+systems was the use of the Haply API to handle the communication between our
+computers and control boards. The Haply API has been developed to function as
 a modular haptics API, allowing users to mix and match various types of
 robotic mechanisms, sensors, and actuators to prototype different types
 of haptic devices.
@@ -227,10 +227,10 @@ to be used in simulation and receiving information about what forces to
 render; and, finally, **Boards** control the data transmission between
 the Computer and the device.
 
-The following figures demonstrate the hAPI hierarchical structure for
+The following figures demonstrate the Haply API hierarchical structure for
 the Haply Dev Board and Haply 2DoF device.
 
-Haply Dev Board and Two DoF Device hAPI
+Haply Dev Board and Two DoF Device Haply API
 Structure
 
 <img src="media/image5.gif" width="500"> 
@@ -261,10 +261,10 @@ devices to the Haply Dev Board.
 		3)  The components of the system run at rates that are determined,  
 			in large part, by our sensory perception                      
 																			 
-		4)  The hAPI is the interface that connects the device to the       
+		4)  The Haply API is the interface that connects the device to the       
 			computer.                                                     
 																			 
-		5)  The architecture of the hAPI allows us to modularly construct   
+		5)  The architecture of the Haply API allows us to modularly construct   
 			different haptic platforms from their underlying components    
  
 
@@ -279,7 +279,7 @@ Lab. We chose Processing as an initial platform to develop one because
 of the huge volume of support and example materials. Processing is built
 upon the Java programming language. We urge you to check out
 [[Processing.org]](https://processing.org/) to view examples
-and sample code. While we've developed the hAPI as an interface between
+and sample code. While we've developed the Haply API as an interface between
 these low-cost haptic platforms, we're not experts in the Processing
 framework. If you think you can do a better job in your example, you're
 probably right! Good luck!
@@ -357,7 +357,7 @@ improvement to the user's visual perception.
 --------------------
 
 [[Examples Location
-]](https://github.com/crgallac/Haply-hAPI/tree/master/hAPI/examples)
+]](https://github.com/HaplyHaptics/Past-Haptic-Demos/tree/master/High-Level-Demos-Firmwarev0/without%20hAPI%20Fisica)
 
 ### 2.4.1. Hello Wall
 
@@ -399,7 +399,7 @@ the draw() loop.
 
 Next we will initialize the hardware components by creating both a new
 *haply\_board* object and a *haply\_2DoF* device object. Within the
-hAPI, the ***Board*** class creates a ***Board*** object that handles
+Haply API, the ***Board*** class creates a ***Board*** object that handles
 the communication between the control board and the computer that is
 running the simulation. The control board, in this case the Haply board,
 is the physical piece of equipment that functions as the interface
@@ -415,7 +415,7 @@ and the sensor that detect changes in state of the device, a
 and ***Sensor*** objects.
 
 Let's run through the setup in this example starting with the
-***Board*** object. In reference to the hAPI documentation, a
+***Board*** object. In reference to the Haply API documentation, a
 ***Board*** object has the following constructor prototype:
 
 
@@ -462,7 +462,7 @@ board with as many devices as we can drive with the actuator outputs. In
 the case of the Haply Development Board, we can drive up to four
 independent motors with the hardware that is built into the board, it is
 possible to drive four 1-degree-of-freedom devices, and two
-2-degree-of-freedom devices. In reference to the hAPI documentation, a
+2-degree-of-freedom devices. In reference to the Haply API documentation, a
 ***Device*** object has the following constructor prototype:
 
  
@@ -629,7 +629,7 @@ the draw() loop.
 
 Next we will initialize the hardware components by creating both a new
 *haply\_board* object and a *haply\_2DoF* device object. Within the
-hAPI, the ***Board*** class creates a ***Board*** object that handles
+Haply API, the ***Board*** class creates a ***Board*** object that handles
 the communication between the control board and the computer that is
 running the simulation. The control board, in this case the Haply board,
 is the physical piece of equipment that functions as the interface
@@ -645,7 +645,7 @@ and the sensor that detect changes in state of the device, a
 and ***Sensor*** objects.
 
 Let's run through the setup in this example starting with the
-***Board*** object. In reference to the hAPI documentation, a
+***Board*** object. In reference to the Haply API documentation, a
 ***Board*** object has the following constructor prototype:
 
  
@@ -693,7 +693,7 @@ board with as many devices as we can drive with the actuator outputs. In
 the case of the Haply Development Board, we can drive up to four
 independent motors with the hardware that is built into the board, it is
 possible to drive four 1-degree-of-freedom devices, and two
-2-degree-of-freedom devices. In reference to the hAPI documentation, a
+2-degree-of-freedom devices. In reference to the Haply API documentation, a
 ***Device*** object has the following constructor prototype:
 
 
@@ -899,7 +899,7 @@ the draw() loop.
 
 Next we will initialize the hardware components by creating both a new
 *haply\_board* object and a *haply\_2DoF* device object. Within the
-hAPI, the ***Board*** class creates a ***Board*** object that handles
+Haply API, the ***Board*** class creates a ***Board*** object that handles
 the communication between the control board and the computer that is
 running the simulation. The control board, in this case the Haply board,
 is the physical piece of equipment that functions as the interface
@@ -915,7 +915,7 @@ and the sensor that detect changes in state of the device, a
 and ***Sensor*** objects.
 
 Let's run through the setup in this example starting with the
-***Board*** object. In reference to the hAPI documentation, a
+***Board*** object. In reference to the Haply API documentation, a
 ***Board*** object has the following constructor prototype:
 
 
@@ -963,7 +963,7 @@ board with as many devices as we can drive with the actuator outputs. In
 the case of the Haply Development Board, we can drive up to four
 independent motors with the hardware that is built into the board, it is
 possible to drive four 1-degree-of-freedom devices, and two
-2-degree-of-freedom devices. In reference to the hAPI documentation, a
+2-degree-of-freedom devices. In reference to the Haply API documentation, a
 ***Device*** object has the following constructor prototype:
 
   
