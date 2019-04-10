@@ -1,32 +1,26 @@
 Processing Demos
 ================
 
-**This set of examples run using the new Haply hAPI. The documentaion
-for this is currently under development, but features a similar user
-interface to the previous hAPI. Flash the new version of the firmware,
-found [here](/Haply_Arduino_Firmware/), onto your Haply Dev Board to get
-these examples started.**
-
 Focusing on Tool Development
 ----------------------------
 
 The Haply Firmware Package abstracts the sending and recieving of data
 shown in previoius lessons. In these lessons, we'll be turning our
-attention to using the hAPI with Processing to create tools with
+attention to using the Haply API with Processing to create tools with
 seamless haptic integration.
 
-For each demo shown we'll talk broadly about the aspects of the hAPI to
+For each demo shown we'll talk broadly about the aspects of the Haply API to
 be shown, and then get into some nitty gritty of how it was implimented.
 A key takeaway with these demos won't necessarily be the exact code
-(although it will be shown), but how the hAPI tools can be implimented
+(although it will be shown), but how the Haply API tools can be implimented
 in other tools you can develop on your own!
 
 **THE MOST IMPORTANT LINK IN THIS LESSON** is right here:
 https://haplyhaptics.github.io/hAPI\_Fisica/annotated.html In it you'll
-find all the documentation needed to use the hAPI, and it will be
-referenced as the *hAPI documentation* in the lessons to come. It is
+find all the documentation needed to use the Haply API, and it will be
+referenced as the *Haply API documentation* in the lessons to come. It is
 recommended to bookmark this link whenever you are working on a tool
-with the hAPI.
+with the Haply API.
 
 See the folder "Example Files" for the code files and project structure.
 Download the relevant folder, and open .pde files to start the project.
@@ -34,7 +28,7 @@ Download the relevant folder, and open .pde files to start the project.
 Demos Order
 -----------
 
-Although each demo functions fine as a standalone example of the hAPI
+Although each demo functions fine as a standalone example of the Haply API
 tools, there is a slight buildup of knowledge throughout the three
 demos. For this reason, if you are relatively new to the Haply
 environment you may want to go in this order -
@@ -63,7 +57,7 @@ environment you may want to go in this order -
 Onward!
 -------
 
-Again, the key takeaway from these demos will be the tools in the hAPI
+Again, the key takeaway from these demos will be the tools in the Haply API
 suite. If the lines of the code which revolve around setting up the
 firmware start to bog down your understanding of these demos, ignore
 them for now and take a look at some of the earlier lessons.
@@ -75,7 +69,7 @@ What is Covered in this Lesson?
 -------------------------------
 
 In this lesson, we'll be using a maze demo to exhibit the following
-tools from the hAPI:
+tools from the Haply API:
 
 1.  How to Draw Shapes
 2.  Writing text
@@ -503,7 +497,7 @@ world.add(b1); //<>//
 Because we want this object to be drawn once and for all at the
 beginning of our simulations, this code is in our **setup()** loop. The
 first line shown creates the object and the final line draws it in the
-world. Information as to what each method does can be found in the hAPI
+world. Information as to what each method does can be found in the Haply API
 documentation. Needless to say that as a maze wall, using the object
 type **FBox** defined in this way fits our needs quite well.
 
@@ -1301,7 +1295,7 @@ You may recall in previous lessons that we used the firmware (Arduino)
 to handle peripheries such as potentiometers and LEDs. Since we are
 coding here only in Processing, there is a different methodology that
 must be used. As a note perifery implimentation does not come natively
-with Processing, all code to do this comes from the hAPI.
+with Processing, all code to do this comes from the Haply API.
 
 To initialize the sensor, two lines of code must be added. The first
 comes before any of the loops, and creates an array into which we'll
@@ -1371,7 +1365,7 @@ Let's Blow this Joint
 So now lets jump into one of the most important part of this demo, the
 joints. Throughout this, keep in mind how versatile the concept of a
 joint is in the physical world; there are multiple types of joints in
-the hAPI, each with different functionality and implimentation.
+the Haply API, each with different functionality and implimentation.
 
 As mentioned before, the first use of a joint in this demo is to allow
 the avatar to pick up and release a ball using a button. The type of
