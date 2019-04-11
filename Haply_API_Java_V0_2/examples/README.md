@@ -33,21 +33,21 @@ tools, there is a slight buildup of knowledge throughout the three
 demos. For this reason, if you are relatively new to the Haply
 environment you may want to go in this order -
 
-1.  [Maze](/01_Maze.md) -
+1.  [Maze](/Haply_API_Java_V0_2/examples/Maze) -
 
     Focuses on: How to draw shapes, writing text, sensors, viscosity,
     buoyancy
 
     <img src="Images/Maze.gif" width ="400px">
 
-2.  [Drag n Drop](/02_Drag_n_Drop.md) -
+2.  [Drag n Drop](/Haply_API_Java_V0_2/examples/Drag_n_Drop) -
 
     Focuses on: Breadboard button implimentation, moving objects,
     multiple object management, joint formation
 
     <img src="Images/Drag_n_Drop.gif" width ="400px">
 
-3.  [Physics](/03_Physics.md) -
+3.  [Physics](/Haply_API_Java_V0_2/examples/Physics) -
 
     Focuses on: 2D Object arrays, other joints, expanded button usage,
     constructing waves
