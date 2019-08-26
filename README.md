@@ -3,7 +3,7 @@
 ## How To Use This Repository
 In this repository you'll find a number of examples that work with Processing. To explore the examples, download the correct firmware and load it onto your board. From there, download and run an example in Processing.
 
-The lib and src folders contain files for starting projects without the use of examples; you'll find that these files already appear in the example files in which they are needed. It is recommended to use the Empty Project Template folder for starting your own project rather than start completely from scratch.
+The lib and src folders contain files for starting projects without the use of examples; you'll find that these files already appear in the example folders in which they are needed. It is recommended to use the Empty Project Template folder for starting your own project rather than start completely from scratch.
 
 ## This API Requires:  
 Haply Modular Haptic Development Kit Firmware v0.4 + for Haply Board v0.3, or  
