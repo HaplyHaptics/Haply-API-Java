@@ -8,7 +8,7 @@ The lib and src folders contain files for starting projects without the use of e
 ## This API Requires:  
 Haply Modular Haptic Development Kit Firmware v0.4 + for Haply Board v0.3, or  
 Haply M0 Firmware v0.3 + for Haply M0 v0.3, or  
-Haply M3 Firmware v0.4 + for Haply M3 v1.5,  
+Haply M3 Firmware v1.5 + for Haply M3 v0.4,  
 and is made to work with 2-DOF Haplet
 
 ## Examples
