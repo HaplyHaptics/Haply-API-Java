@@ -11,11 +11,8 @@ Haply M0 Firmware v0.3 + for Haply M0 v0.3, or
 Haply M3 Firmware v1.5 + for Haply M3 v0.4,  
 and is made to work with 2-DOF Haplet
 
-## Examples
-### Haptic Concepts
-- Hello Wall
-
 ### Haptic Examples (Uses Physics Engine)
+- Hello Wall
 - Drag n Drop
 - Maze
 - Shapes

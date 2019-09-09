@@ -14,8 +14,8 @@
 
 public class Pwm{
 	
-  private int       pin         = 0;
-  private int       value       = 0;
+	private int pin		= 0;
+	private int value       = 0;
 	
 	
 	/**
